@@ -1,0 +1,408 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+/* @media screen and (min-width: 1700px) {
+    header div {
+        transform: rotate(30deg) scale(1.3);
+    }
+} */
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: darkgray;
+    height: 200vh;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow-y: visible;
+    background: url('../images/me_wide.jpg');
+    background-size: cover;
+}
+
+header section {
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    z-index: 1;
+    /* border: red dotted 1px; */
+}
+
+header h1 {
+    color: white;
+    font-size: 4rem;
+    font-style: italic;
+    margin-left: 3vw;
+    margin-top: 7vh;
+    margin-bottom: 0;
+}
+
+header h2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    margin-top: 20px;
+}
+
+header div {
+    background: black;
+    opacity: 40%;
+    position: absolute;
+    width: 100%;
+    height: 140%;
+    transform: rotate(30deg) scale(1.2);
+    top: -40vh;
+}
+
+header div:nth-child(2) {
+    left: -65vw;
+    opacity: 1;
+}
+
+header div:nth-child(3) {
+    left: -60vw;
+}
+
+header div:nth-child(4) {
+    left: -55vw;
+}
+
+.changing {
+    font-weight: lighter;
+    font-style: normal;
+    margin-left: 6vw;
+    font-size: 3rem;
+    margin-top: 80px;
+}
+
+.mainButton {
+    display: inline-block;
+    text-decoration-line: none;
+    background: linear-gradient(to left, #ffd89b, #19547b);
+    width: max-content;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin-left: 60px;
+    margin-top: 60px;
+    transition: box-shadow 0.2s ease;
+}
+
+.myCV {
+    margin-right: 210px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.mainButton:hover {
+    box-shadow: 2px 2px 20px darkgray;
+}
+
+main {
+    min-width: 100vw;
+    min-height: 100vh;
+    /* width: max-content;
+    height: max-content; */
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.description {
+    width: 100%;
+    float: right;
+    display: flex;
+    height: 100vh !important;
+    /* overflow-y: hidden; */
+    /* border: red dotted 2px; */
+}
+
+.description>article {
+    border-radius: 999999999999999px;
+    display: block;
+    width: 50vw;
+    height: 50vw;
+    margin: auto;
+    margin-left: 40vw;
+    background: white;
+    border: solid 2px darkslategrey;
+    color: black;
+    overflow-y: scroll;
+    box-shadow: 5px 5px 20px gray;
+    /* margin-top: 50px; */
+}
+
+.description p {
+    color: black;
+    text-align: center;
+    margin: auto;
+    max-width: 80%;
+    line-height: 1.2;
+    font-size: 1.3rem;
+}
+
+.description h1 {
+    text-align: center;
+    font-size: 4vw;
+}
+
+article .mainButton {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block;
+}
+
+.journey {
+    background: url('../images/space.jpg');
+    background-size: cover;
+    display: flex;
+    position: relative;
+}
+
+.journey div {
+    background: grey;
+    border-radius: 20px;
+    width: 275px;
+    height: max-content;
+    margin-right: 10vw;
+    display: inline-flex;
+    min-width: 0;
+    min-height: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    flex-direction: column;
+    padding-left: 5px;
+}
+
+.journey div:last-child {
+    margin-right: 0;
+}
+
+.journey section {
+    display: flex;
+    margin: auto;
+    flex-flow: row wrap;
+    position: relative;
+    z-index: 1;
+    width: auto;
+}
+
+.journey h3 {
+    font-weight: normal;
+    margin-bottom: 0.1%;
+}
+
+.journey p {
+    font-style: italic;
+    margin-bottom: 1%;
+}
+
+.journey li {
+    margin-bottom: 5px;
+}
+
+.timeLine {
+    display: block;
+    width: 100vw;
+    border-radius: 999px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    z-index: 0;
+    background: white;
+}
+
+.skills {
+    display: flex;
+    flex-flow: row wrap;
+    background: url('../images/sky-night.jpg');
+    background-size: cover;
+}
+
+.skills div {
+    background: white;
+    color: black;
+    /* border: 2px grey solid; */
+    border-radius: 20px;
+    box-shadow: 5px 5px 40px black;
+    width: 200px;
+    height: max-content;
+    margin-right: 4vw;
+}
+
+.skills h3 {
+    text-align: center;
+}
+
+.skills p {
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.4;
+}
+
+.skills section {
+    display: flex;
+    flex-flow: row wrap;
+    width: max-content;
+    margin: auto;
+    height: max-content;
+}
+
+.skills div:last-child {
+    margin-right: 0;
+}
+
+.images {
+    display: flex;
+    flex-flow: row nowrap;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 10px;
+}
+
+.images img {
+    margin-right: 5px;
+    min-width: 43px;
+    max-width: 43px;
+}
+
+.images img:last-child {
+    margin-right: 0px;
+}
+
+img[src="images/python.png"] {
+    min-width: 100px;
+    margin: auto;
+    margin-right: auto !important;
+}
+
+img[src="images/php.png"] {
+    min-width: 80px;
+}
+
+img[src="images/mysql.png"] {
+    min-width: 80px;
+}
+
+img[src="images/euronext.png"]{
+    min-width: 100%;
+}
+
+.video img {
+    min-width: 43px;
+    max-width: 43px;
+}
+
+.contact {
+    display: flex;
+    background: black;
+    position: relative;
+}
+
+.vertical-line {
+    position: absolute;
+    height: 80vh;
+    width: 2px;
+    background: white;
+    left: 50vw;
+    margin-left: -1px;
+    top: 10vh;
+}
+
+.contactme {
+    float: left;
+    height: 100vh;
+    width: 50%;
+    display: flex;
+}
+
+.contactme>h1 {
+    margin: auto;
+    width: max-content;
+    font-size: 6rem;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+form input,form textarea {
+    display: block;
+    margin: auto;
+    border-radius: 40px;
+    border: none;
+    padding: 20px;
+    background: lightgray;
+    box-shadow: 1px 1px 10px darkgrey;
+    width: 60%;
+    outline: none;
+}
+
+form input::placeholder,form textarea::placeholder {
+    text-shadow: 1px 1px 10px black;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+form button {
+    border: none;
+    cursor: pointer;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    outline: none !important;
+}
+
+form input {
+    margin-top: 15vh !important;
+    margin-bottom: 0 !important;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+form textarea {
+    margin-bottom: 0 !important;
+    margin-top: 70px;
+}
+
+.thankyou {
+    background: black;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+}
+
+.thankyou h1 {
+    margin-top: 35vh;
+}
+
+#goback {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
